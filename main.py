@@ -22,5 +22,6 @@ for page in range(1, 11):
     except IndexError:
         print('website is updating')
         csv_obj.writerow([title.text, 'website is updating', creator_verifier.text])
+    sleep(random.randint(7,12))
 file.close()
 
